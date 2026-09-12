@@ -69,7 +69,7 @@ def compute_data():
 
     # Lire et supprimer le fichier de la base de données.
     try:
-        file = os.getcwd() + r"\csv"
+        file = os.getcwd() + r"/csv"
         df = pd.read_csv(file, sep=";")
         os.remove(file)
         print("Base data (FR GOV API) file successfully read and deleted.")
