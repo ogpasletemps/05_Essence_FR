@@ -50,7 +50,7 @@ def calculate_24_price(df):
     return data
 
 def save_data(data):
-    path = os.getcwd() + r"\bdd_prix_essence.csv"
+    path = os.getcwd() + r"/bdd_prix_essence.csv"
     read = pathlib.Path(path)
     bdd = pd.read_csv(read, dtype=object)
     data = pd.DataFrame(data)
